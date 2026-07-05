@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-      stage{
+      stage("demo"){
         steps{
         withCredentials([
             usernamePassword(credentialsId:'github-login',usernameVariable:'USER', passwordVariable:'PASS'),
